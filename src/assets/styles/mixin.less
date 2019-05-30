@@ -1,0 +1,24 @@
+.icon(@path, @width: 11px, @height: 17px){
+  display: inline-block;
+  width: @width;
+  height:@height;
+  overflow: hidden;
+  background-image: url(@path);
+}
+
+
+
+.no-wrap(){
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 循环生成css
+.loop(@n, @i: 1) when (@i <= @n) {
+  &:nth-child(@{i}) {
+    animation-delay: (.1s * @i);
+    background-color: red(@color-green, (50 * @i));
+  }
+  .loop(@n, (@i + 1));
+}

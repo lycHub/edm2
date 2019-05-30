@@ -1,0 +1,12 @@
+{
+  "name": "json-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api": "json-server -w index.js"
+  },
+  "keywords": ["json-server"],
+  "author": "EDM",
+  "license": "ISC"
+}

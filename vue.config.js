@@ -15,9 +15,12 @@ module.exports = {
     quiet: true
   },
 
+  transpileDependencies: ['iview'],
+
   lintOnSave: false,
 
   chainWebpack(config) {
+    config.devtool('cheap-module-source-map');
     config.module
       .rule('vue')
       .use('vue-loader')

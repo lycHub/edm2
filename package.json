@@ -9,6 +9,7 @@
     "inspect": "vue-cli-service inspect > output.js"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "axios": "^0.18.0",
     "better-scroll": "^1.14.1",
     "date-fns": "^1.30.1",

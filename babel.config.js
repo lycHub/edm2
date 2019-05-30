@@ -1,6 +1,9 @@
 module.exports = {
   presets: [
-    '@vue/app'
+    ['@vue/app', {
+      // corejs: 2,
+      useBuiltIns: 'entry'
+    }]
   ],
   "plugins": [
     ["import", {
@@ -9,3 +12,4 @@ module.exports = {
     }, "iview"]
   ]
 }
+

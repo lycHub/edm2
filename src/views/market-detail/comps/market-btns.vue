@@ -59,7 +59,6 @@
         return this.hasRc && this.currentStatus !== 'sent' && this.currentStatus !== 'deleted';
       },
       arrangeBtn() {
-        // return this.showTestMailBtn && (!isEmptyObj(this.strategy) && isAfter(toDate(this.strategy.realTime), new Date()));
         return this.hasRc && this.currentStatus === 'draft';
       },
       btns() {

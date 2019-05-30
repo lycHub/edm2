@@ -288,7 +288,7 @@ export default {
     },
     onSave(needBack) {
       if (!this.enclosure.upLoadComplete) {
-        this.$Message.warning('正在上传附件!');
+        this.$Message.warning('Attachments are being uploaded, please wait a moment');
       }else {
         this._getContent();
         if (this.contents) {
@@ -341,7 +341,7 @@ export default {
           this.$Spin.hide();
         });
       }else {
-        this.$Message.error('请添加正文');
+        this.$Message.error('Please add the text first');
         this.showSaveTemplate = false;
       }
     },

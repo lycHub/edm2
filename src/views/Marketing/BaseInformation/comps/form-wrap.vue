@@ -83,39 +83,6 @@
           <Select label-in-value @on-change="onSelect($event, 'sender')" v-model="selectedSenderEmail.value">
             <Option v-for="item in senderEmails" :value="item.id" :key="item.id">{{ item.email }}</Option>
           </Select>
-          <!-- <EdSelect
-            ref="senderEmailSelect"
-            :count="emailCount"
-            :panelWidth="450"
-            :createLabel="'add a new address'"
-            :visible="senderEmailVisible"
-            :showSpin="showFilterSpin"
-            :showLoadMoreSpin="showLoadMoreSpin"
-            :showPass="true"
-            @on-search="onSearch($event, 'sender')"
-            @on-add="onAdd($event, 'email')"
-            @on-visible-change="senderEmailVisible = $event"
-          >
-            <i-Input
-              icon="ios-arrow-down"
-              slot="handle"
-              :value="selectedSenderEmail.email"
-              readonly
-            />
-            <EdScroll :data="senderEmails" ref="senderScroll" @on-pull-up="onPullUp('sender')">
-              <div>
-                <EdSelectItem
-                  v-for="item in senderEmails"
-                  :key="item.id"
-                  :id="item.id"
-                  :activedId="selectedSenderEmail.id"
-                  :editable="false"
-                  @on-delete="onDelete($event, 'email')">
-                  <span v-highlight @click="onSelect(item, 'sender')">{{item.email}}</span>
-                </EdSelectItem>
-              </div>
-            </EdScroll>
-          </EdSelect> -->
         </div>
       </FormItem>
     </div>

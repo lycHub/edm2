@@ -49,9 +49,9 @@
 //        this.$refs['content'].innerHTML = newVal;
       },
       content(newVal) {
-//        console.log('content', newVal);
-        this.$emit("input", newVal);
-        this.$emit("on-change", newVal);
+        const val = newVal.replace(/&nbsp;/g, ' ');
+        this.$emit("input", val);
+        this.$emit("on-change", val);
       }
     },
     methods: {
@@ -62,8 +62,9 @@
 //        this.poi = this.content.length;
       },
       onkeyUp(evt) {
-        console.log('keyup');
+        // console.log('keyup');
         this.html = evt.target.innerHTML;
+        // this.html = evt.target.innerText;
         // .replace(/<[^>]+>|&[^>]+;/g,"")
       },
       onpaste(evt) {

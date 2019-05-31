@@ -44,6 +44,7 @@
     }
     .operators{
       margin-left: 28px;
+      min-width: 60px;
       .ok{
         margin-right: 10px;
         color: @color-primary;

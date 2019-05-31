@@ -145,6 +145,7 @@ export default {
       }).catch(error => {
         console.error(error);
         this.$Message.error(error.message || 'Create mail failed');
+        this.SET_OPERATE(operates.FREE);
         this.showSpin = false;
       });
     },
@@ -156,6 +157,7 @@ export default {
       }).catch(error => {
         console.error(error);
         this.$Message.error(error.message || 'Update mail failed');
+        this.SET_OPERATE(operates.FREE);
         this.showSpin = false;
       });
     },

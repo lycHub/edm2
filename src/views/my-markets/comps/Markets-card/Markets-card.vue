@@ -104,6 +104,7 @@ export default {
     .cards-wrap {
       display: flex;
       flex-wrap: wrap;
+      min-height: 430px;
       .item {
         margin: 35px 0 0 35px;
       }

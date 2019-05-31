@@ -678,6 +678,8 @@ export default {
     },
 
     checkField() {
+      // console.log('subject :', this.formModel.subject);
+      // return;
       this.validator.validate({
         subject: this.formModel.subject,
         name: this.formModel.name,
@@ -697,7 +699,7 @@ export default {
     },
 
     _fillSubject() {
-      // console.log('_fillSubject', this.formModel.subject);
+      console.log('_fillSubject', this.formModel.subject);
       if (!this.formModel.subject) {
         this.formModel.subject = this.formModel.name;
         this.$refs['subject'].changHtml(this.formModel.name);

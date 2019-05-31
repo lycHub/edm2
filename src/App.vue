@@ -253,7 +253,7 @@ export default {
 
 
   beforeCreate() {
-    console.log('5-31 11:40');
+    console.log('5-31 17:30');
     MarketCategoryServe.initCategory().then(msg => {
       console.log('分类初始化' + msg);
     });

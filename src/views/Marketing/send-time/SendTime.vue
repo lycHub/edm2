@@ -76,7 +76,7 @@
 
         <Card class="card recipients" title="Recipients' information">
           <Button type="primary" ghost slot="extra">
-            <a href="http://mgt.mysteelcmstest.com/mysteelglobal/group/list.htm" target="_blank">Edit</a>
+            <a href="http://mgt.mysteelcmstest.com/mysteelglobal/group/list.htm">Edit</a>
           </Button>
           <div class="list-wrap">
             <label>EDM sent to following subscribers：</label>

@@ -253,7 +253,7 @@ export default {
 
 
   beforeCreate() {
-    console.log('5-30 ie');
+    console.log('5-30 skin');
     MarketCategoryServe.initCategory().then(msg => {
       console.log('分类初始化' + msg);
     });

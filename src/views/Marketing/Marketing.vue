@@ -302,6 +302,7 @@
           }
         }
         .save-item{
+          min-width: 180px;
           font-size: @font-size-normal !important;
         }
       }

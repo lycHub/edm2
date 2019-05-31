@@ -49,6 +49,7 @@
 //        this.$refs['content'].innerHTML = newVal;
       },
       content(newVal) {
+        // console.log('content :', newVal);
         const val = newVal.replace(/&nbsp;/g, ' ');
         this.$emit("input", val);
         this.$emit("on-change", val);

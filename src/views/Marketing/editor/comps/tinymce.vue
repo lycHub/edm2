@@ -54,7 +54,7 @@ export default {
       tinymce.init({
         target: el,
         min_height: 800,
-        // skin: "oxide-dark",
+        skin: "oxide-dark",
         // skin_url: '/css/mytinymceskin',
         ...this.initConfig,
         // menubar: false,

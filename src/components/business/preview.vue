@@ -52,7 +52,7 @@
              </div>
 
              <!--正文-->
-             <div ref="contents"></div>
+             <div class="contents" ref="contents" v-html="contents"></div>
 
              <!--页脚-->
              <div ref="pageFooter">
@@ -157,7 +157,7 @@
     },*/
     watch: {
       contents(newVal) {
-        this.$refs['contents'].innerHTML = newVal;
+        // this.$refs['contents'].innerHTML = newVal;
       },
       initHF(newVal) {
         this.showHF = newVal;
@@ -191,7 +191,7 @@
       }*/
     },
     mounted() {
-      this.$refs['contents'].innerHTML = this.contents;
+      // this.$refs['contents'].innerHTML = this.contents;
     }
   }
 </script>
@@ -268,6 +268,10 @@
                 cursor: pointer;
               }
             }
+          }
+
+          .contents{
+            word-wrap: break-word;
           }
         }
       }
